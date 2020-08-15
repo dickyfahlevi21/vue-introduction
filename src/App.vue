@@ -4,9 +4,11 @@
     <Todos v-bind:todos="todos" v-on:delete-todo="deleteTodo" />
   </div>
 </template>
+
 <script>
 import Todos from "./components/Todos";
 import AddTodo from "./components/AddTodo";
+
 export default {
   name: "app",
   components: {
@@ -18,17 +20,12 @@ export default {
       todos: [
         {
           id: 1,
-          title: "Item 3",
+          title: "Contoh Item 1",
           completed: false,
         },
         {
           id: 2,
-          title: "Item 2",
-          completed: false,
-        },
-        {
-          id: 3,
-          title: "Item 1",
+          title: "Contoh Item 2",
           completed: false,
         },
       ],
